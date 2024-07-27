@@ -34,13 +34,20 @@ Yerel bir S3 bucket oluşturmak için LocalStack kullanarak aşağıdaki komutu 
 aws --endpoint-url=http://localhost:4566 s3api create-bucket --bucket my-local-bucket
 ```
 
-### Adım 3: Bağımlılıkları Yükleyin
+### Adım 3: Docker Compose ile Uygulamayı Başlatın
+Docker compose dosyasını çalıştırın.
+
+```
+docker compose up
+```
+
+### Adım 4: Bağımlılıkları Yükleyin
 
 ```
 npm install
 ```
 
-### Adım 4: Uygulamayı Başlatın
+### Adım 5: Uygulamayı Başlatın
 
 ```
 node app.js
