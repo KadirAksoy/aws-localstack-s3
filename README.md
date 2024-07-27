@@ -1,5 +1,8 @@
-# Welcome to GitHub Desktop!
+# AWS LocalStack
 
-This is your README. READMEs are where you can communicate what your project is and how to use it.
+Uygulama basit bir file uplaod ve dowland yapmaktadır.
 
-Write your name on line 6, save it, and then head back to GitHub Desktop.
+Bilgisayarda kurulu olması gerekenler:
+
+
+öncelikle cmd ayarları yapılması gerekli.
