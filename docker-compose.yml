@@ -1,0 +1,24 @@
+version: '3'
+services:
+  localstack:
+    image: localstack/localstack:latest
+    environment:
+      - AWS_DEFAULT_REGION=us-east-1
+      - EDGE_PORT=4566
+      - SERVICES=lambda,s3
+      - LOCALSTACK_TMPDIR=/tmp/localstack-alt
+      - AWS_ENDPOINT_URL=http://localhost:4566
+      - AWS_ACCESS_KEY_ID=kadir
+      - AWS_SECRET_ACCESS_KEY=kadir
+    ports:
+      - 4566:4566
+      - 4574:4574
+      - 4576:4576
+    volumes:
+      - ./localstack-data:/tmp/localstack-alt
+
+
+## aws --endpoint-url=http://localhost:4566 s3api create-bucket --bucket my-bucket
+## Yukarıdaki kodda localstackte bucket oluşturuyor.
+## aws s3api create-bucket --bucket my-bucket  böyle yazınca hata alıyoruz.
+## o yüzden en üstte yazdığımız komuttaki gibi endpoint url i http://localhost:4566 yapmamız gerekiyor.
