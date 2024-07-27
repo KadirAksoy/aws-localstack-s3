@@ -51,15 +51,15 @@ node app.js
 Dosya Yükleme
 Bir dosya yüklemek için, dosyayı istek gövdesine ekleyerek aşağıdaki endpoint'e POST isteği gönderin:
 
-`
+```
 POST http://localhost:3000/upload
-`
+```
 
 Dosya İndirme
 Bir dosya indirmek için, dosya adını URL'ye ekleyerek aşağıdaki endpoint'e GET isteği gönderin:
-`
+```
 GET http://localhost:3000/download/{fileName}
-`
+```
 
 
 
