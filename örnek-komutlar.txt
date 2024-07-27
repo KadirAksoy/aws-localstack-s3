@@ -1,0 +1,15 @@
+aws configure -> tüm ayarları kadir yap. region -> us-east-1 yapmak gerekiyor.
+
+## aws --endpoint-url=http://localhost:4566 s3api create-bucket --bucket my-bucket
+## Yukarıdaki kodda localstackte bucket oluşturuyor.
+## aws s3api create-bucket --bucket my-bucket  böyle yazınca hata alıyoruz.
+## o yüzden en üstte yazdığımız komuttaki gibi endpoint url i http://localhost:4566 yapm
+
+
+
+aws --endpoint-url=http://localhost:4566 s3api put-object 
+--bucket my-test-bucket --key KadirAksoy.jpg --body KadirAksoy.jpg  --> resim atıyor.
+
+
+aws --endpoint-url=http://localhost:4566 s3api list-objects 
+--bucket my-test-bucket
