@@ -48,17 +48,19 @@ node app.js
 
 # Kullanım
 
-Dosya Yükleme
+### Dosya Yükleme
 Bir dosya yüklemek için, dosyayı istek gövdesine ekleyerek aşağıdaki endpoint'e POST isteği gönderin:
 
 ```
 POST http://localhost:3000/upload
 ```
 
-Dosya İndirme
+### Dosya İndirme
+bucketName kısmına olutşurduğunuz bucketName'i yazın.
 Bir dosya indirmek için, dosya adını URL'ye ekleyerek aşağıdaki endpoint'e GET isteği gönderin:
+
 ```
-GET http://localhost:3000/download/{fileName}
+GET http://localhost:3000/{bucketName}/download/{fileName}
 ```
 
 
