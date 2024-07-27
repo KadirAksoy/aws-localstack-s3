@@ -16,13 +16,15 @@ Başlamadan önce bilgisayarınızda aşağıdakilerin kurulu olduğundan emin o
 
 Komut istemcinizi veya terminalinizi açın ve AWS CLI'yi yapılandırmak için aşağıdaki komutu çalıştırın:
 
-```sh
+```
 aws configure
 
 AWS Access Key ID [None]: test
 AWS Secret Access Key [None]: test
 Default region name [None]: us-east-1
 Default output format [None]: json
+```
+
 
 ### Adım 2: Bir S3 Bucket Oluşturun
 
