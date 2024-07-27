@@ -30,15 +30,21 @@ Default output format [None]: json
 
 Yerel bir S3 bucket oluşturmak için LocalStack kullanarak aşağıdaki komutu çalıştırın:
 
+```
 'aws --endpoint-url=http://localhost:4566 s3api create-bucket --bucket my-local-bucket'
+```
 
 ### Adım 3: Bağımlılıkları Yükleyin
 
+```
 'npm install'
+```
 
 ### Adım 4: Uygulamayı Başlatın
 
+```
 'node app.js'
+```
 
 
 
